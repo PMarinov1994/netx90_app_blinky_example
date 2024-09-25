@@ -1,0 +1,16 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // [nxstudio] AUTO GENERATED TASK. DO NOT EDIT/REMOVE
+      "label": "nxstudio: prelaunch",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "nxstudio: build",
+        "nxstudio: install-launch-tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.1063076147">
+			<storageModule buildSystemId="com.hilscher.netx.cdt.cmake4eclipse.configurationDataProvider" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.1063076147" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.1063076147" name="Debug" parent="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug">
+					<folderInfo id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.1063076147." name="/" resourcePath="">
+						<toolChain id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.toolChain.1704999309" name="CMake driven" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.debug.toolChain">
+							<targetPlatform id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake.586395422" name="Any Platform" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake"/>
+							<builder buildPath="/netx90_app_blinky/_build/Debug" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder.1046067940" managedBuildOn="true" name="CMake Builder.Debug" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder"/>
+							<tool id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool.624965843" name="CMake" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool">
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c.340142617" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c"/>
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp.1773574692" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule buildDir="_build/${ConfigName}" cmakeToolchain="cmake/netx90_gccarmemb.cmake" moduleId="com.hilscher.netx.cdt.cmake4eclipse.settings">
+				<options/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.1247404296">
+			<storageModule buildSystemId="com.hilscher.netx.cdt.cmake4eclipse.configurationDataProvider" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.1247404296" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="Default coming from cmake" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.1247404296" name="Default" parent="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake">
+					<folderInfo id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.1247404296." name="/" resourcePath="">
+						<toolChain id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.toolChain.1488775586" name="CMake driven" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.cmake.toolChain">
+							<targetPlatform id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake.642295103" name="Any Platform" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake"/>
+							<builder buildPath="/netx90_app_blinky/_build/Default" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder.185993357" managedBuildOn="true" name="CMake Builder.Default" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder"/>
+							<tool id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool.932143795" name="CMake" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool">
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c.1969122561" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c"/>
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp.1798394618" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule buildDir="_build/${ConfigName}" cmakeToolchain="cmake/netx90_gccarmemb.cmake" moduleId="com.hilscher.netx.cdt.cmake4eclipse.settings">
+				<options/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.1652870884">
+			<storageModule buildSystemId="com.hilscher.netx.cdt.cmake4eclipse.configurationDataProvider" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.1652870884" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.1652870884" name="Release" parent="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release">
+					<folderInfo id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.1652870884." name="/" resourcePath="">
+						<toolChain id="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.toolChain.1897994938" name="CMake driven" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.config.release.toolChain">
+							<targetPlatform id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake.1275934659" name="Any Platform" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchian.targetPlatform.cmake"/>
+							<builder buildPath="/netx90_app_blinky/_build/Release" id="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder.1574603442" managedBuildOn="true" name="CMake Builder.Release" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.builder"/>
+							<tool id="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool.1198145258" name="CMake" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.toolchain.tool">
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c.780653847" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.c"/>
+								<inputType id="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp.958242463" superClass="com.hilscher.netx.cdt.cmake4eclipse.mbs.tool.base.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule buildDir="_build/${ConfigName}" cmakeToolchain="cmake/netx90_gccarmemb.cmake" moduleId="com.hilscher.netx.cdt.cmake4eclipse.settings">
+				<options/>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="netx90_app_blinky.com.hilscher.netx.cdt.cmake4eclipse.mbs.projectType.1250969620" name="" projectType="com.hilscher.netx.cdt.cmake4eclipse.mbs.projectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

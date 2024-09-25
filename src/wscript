@@ -1,0 +1,57 @@
+def build(bld):
+    
+    toolchain = bld.env["UsedToolchain"]
+    if not toolchain:
+        bld.fatal('Environment parameter "UsedToolchain" is not available! Make sure to provide the environment parameter "UsedToolchain" in the root wscript file of your project. e.g.: conf.env["UsedToolchain"] = "gccarmemb"')
+    
+    platform  = bld.env["UsedPlatform"]
+    if not platform:
+        bld.fatal('Environment parameter "UsedPlatform" is not available! Make sure to provide the environment parameter "UsedPlatform" in the root wscript file of your project. e.g.: conf.env["UsedPlatform"]  = "netx90_app"')
+    
+    comp_prefix = bld.get_name_prefix(
+        toolchain = toolchain,
+        platform  = platform)
+    
+    sources = [
+        "gpio.c",
+        "main.c",
+        "netx90_app_header.c",
+    ]
+    
+    includes = [
+        "../Include",
+        "../"
+    ]
+    
+    defines = [ 
+        "__NETX90",
+        "_NETX_",
+        "__BLD_SYSTEM__ =  WAF"
+        ]
+    
+    uses = [ 
+        comp_prefix + "CMSIS",
+    ]
+
+    bld.firmware(
+        target           = "netx90_iflash_cmake.nai",
+        name             = comp_prefix + "netx90_app_iflash",
+        platform         = platform,
+        toolchain        = toolchain,
+        use              = uses,
+        netx_type        = "netx90",
+        source           = sources,
+        includes         = includes,
+        defines          = defines,
+        linkerscript     = ["../Linker/netx90_app_iflash.ld"],
+    )
+
+
+
+    bld.sdkcomponent(
+        name             = "cmsis_configuration_sdk",
+        export_defines   = [
+                           "__STACK_SIZE = 0x00002000",
+                           "__HEAP_SIZE =  0x00008000",
+                           ],
+    )

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "netXStudio_VSCode",
+            "intelliSenseMode": "gcc-arm",
+            "cStandard": "gnu99",
+            "compileCommands": "${workspaceFolder}/.vscode/compile_commands_netx90_use_case_a_blinky.json"
+        }
+    ],
+    "version": 4
+}

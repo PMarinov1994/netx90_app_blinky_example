@@ -1,0 +1,62 @@
+def build(bld):
+    
+    toolchain = bld.env["UsedToolchain"]
+    if not toolchain:
+        bld.fatal('Environment parameter "UsedToolchain" is not available! Make sure to provide the environment parameter "UsedToolchain" in the root wscript file of your project. e.g.: conf.env["UsedToolchain"] = "gccarmemb"')
+    
+    platform  = bld.env["UsedPlatform"]
+    if not platform:
+        bld.fatal('Environment parameter "UsedPlatform" is not available! Make sure to provide the environment parameter "UsedPlatform" in the root wscript file of your project. e.g.: conf.env["UsedPlatform"]  = "netx90"')
+    
+    comp_prefix = bld.get_name_prefix(
+        toolchain = toolchain,
+        platform  = platform)
+    
+# Component CMSIS ---------------------------------------------------------
+
+    defines = [
+               "__STARTUP_CLEAR_BSS",
+               "__START = main",
+               #"__GENERATE_DUMMY",
+               #"SYSTEM_TEMPERATURE_FLOATING_POINT_SUPPORT",
+               #"NVIC_SOFT_VECTOR",
+               ]
+    
+    sources = [
+        "Device/Hilscher/netx/Source/GCC/startup_netx90_app.S", 
+        "Device/Hilscher/netx/Source/system_netx.c", 
+    ]
+    
+    i=0
+    for k in sources:
+        if "startup" in k:
+            i+=1
+            if i>1:
+                raise ValueError("Two or more startup files in the Build!!")
+
+    includes = [
+        "Include",
+        "Device/Hilscher/netx/Include",
+        ]
+
+    bld.stlib( 
+        target          = "CMSIS",
+        name            = comp_prefix + "CMSIS",
+        description     = "CMSIS",
+        displaygroup    = "Libraries",
+        platform        = platform,
+        toolchain       = toolchain,
+        use             = [
+                           "cmsis_configuration_sdk",
+                          ],
+        source          = sources,
+        includes        = includes,
+        export_includes = includes,
+        defines         = defines,
+    )
+    
+    bld.sdkcomponent(
+        name            = "CMSIS_sdk",
+        export_includes = includes,
+        export_defines  = defines,
+    )
