@@ -34,7 +34,7 @@ def build(bld):
     ]
 
     bld.firmware(
-        target           = "netx90_iflash_cmake.nai",
+        target           = "netx90_iflash_waf.nai",
         name             = comp_prefix + "netx90_app_iflash",
         platform         = platform,
         toolchain        = toolchain,
